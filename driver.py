@@ -53,11 +53,10 @@ if __name__ == "__main__":
     # unkown text to strings of size 3 in the known text.
     _, k = sys.argv
 
-    unknown_txt = 'hopped out drop top'
-    # unknown_txt = 'drinking beer on a dirt road'
-    # unknown_txt = 'missing my woman'
+    with open("unknown_lyrics.txt", "r") as f:
+        lyrics = f.read()
 
-    print(f'Unknown lyrics: \n{unknown_txt}\n')
-    process(unknown_txt, int(k))
+    print(f'Unknown lyrics: \n{lyrics}\n')
+    process(lyrics, int(k))
 
     # true genre =

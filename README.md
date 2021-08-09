@@ -1,5 +1,5 @@
 # lyrics-machine
-Enter any lyrics into unknown_lyrics.txt and the model will predict the genre of music it belongs to.
+This k-th order markov chain model will predict which genre of music the given text belongs to.
 
 After placing any text in the "unknown_lyrics.txt" file, the user must enter one command line argument - k:
 python driver.py [k]

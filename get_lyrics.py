@@ -1,6 +1,5 @@
 import requests
 import re
-import time
 
 apikey = '76ed9d69f0e44f2b0cc173c8b1eeb59c'
 root_url = 'https://api.musixmatch.com/ws/1.1/'
@@ -78,19 +77,6 @@ def write_output(genre_lyrics):
             genre_lyrics = ''.join(lyric_list)
             f.write(genre_lyrics)
 
-def get_unknown(analysis_genres):
-    '''
-    '''
-    pass
-    # grab a song from each genre
-    # for genre in analysis_genres:
-        # f_music_genre_id
-
-    # import pdb; pdb.set_trace()
-
-    # with open('example_unknown_lyrics.txt', 'w') as f:
-    #     f.write(lyrics)
-
 def main():
 
     all_genres = get_all_genres()
@@ -98,9 +84,6 @@ def main():
     genre_lyrics = add_lyrics_to_genres(all_genres)
 
     write_output(genre_lyrics)
-
-    # get lyrics for new songs to guess the genre
-    # get_unknown(analysis_genres) 
 
 
 if __name__ == "__main__":

@@ -1,12 +1,7 @@
 '''
 k-th order Markov model Learning Algorithm
 '''
-
-import pandas as pd
 import numpy as np
-import re
-from functools import reduce
-
 
 class Markov:
     '''
